@@ -7,7 +7,11 @@ var burgers = require("../models/burger");
 
 
 
+router.get()
 
+router.post()
+
+router.put()
 
 
 
