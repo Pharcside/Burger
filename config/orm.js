@@ -20,7 +20,7 @@ insertOne:function(burger, cb){
         if (err){
             throw err;
         }
-        cb(reult);
+        cb(result);
     });
 
 
