@@ -7,12 +7,33 @@ var burgers = require("../models/burger");
 
 
 
-router.get()
+router.get("/", function (req, res) {
+    burgers.selectAll(function (data) {
+        var hbsObject = {
+            burgers: data
+        };
+        console.log(hbsObject);
+        res.render("index", hbsObject);
+    });
+});
 
-router.post()
+router.post("/", function (req, res) {
+    burgers.insertOne(req.body.burger_name, function () {
+        res.redirect("/");
+    });
+});
 
-router.put()
+router.put("/:id", function (req, res) {
+    var id = req.params.id;
 
+    console.log("id", id);
+
+    burger.updateOne(id, function () {
+        res.redirect("/");
+    });
+});
+
+module.exports = router;
 
 
 
