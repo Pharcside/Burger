@@ -36,12 +36,3 @@ router.put("/:id", function (req, res) {
 module.exports = router;
 
 
-
-
-
-
-
-
-
-// Export routes for server.js to use.
-module.exports = router;
