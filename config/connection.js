@@ -6,7 +6,16 @@ var connection = mysql.createConnection({
   user: "root",
   password: "root",
   database: "burgers_db"
-});
+},
+{
+  host: "lsulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  port: 3306,
+  user: "de387dkiuhaj8njy",
+  password: "tdwfmhzg0ka14si0",
+  database: "bzg9oc1t9eper91jh"
+}
+
+);
 
 // Make connection.
 connection.connect(function(err) {
